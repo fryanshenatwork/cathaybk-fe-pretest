@@ -1,0 +1,33 @@
+@import '../../styles/variable.scss';
+
+.date {
+  display: block;
+  width: $calendar-date-button-width;
+  height: $calendar-date-button-height;
+  background-color: $calendar-date-button-color-default;
+  border: 0;
+
+  &.none-same-month {
+    cursor: not-allowed;
+    color: $calendar-date-button-color-none-current-month;
+  }
+
+  &.today {
+    background-color: $calendar-date-button-color-today;
+  }
+
+  &:not(.none-same-month) {
+    cursor: pointer;
+
+    &:hover {
+      background-color: $calendar-date-button-color-hover;
+      color: black;
+    }
+    
+  }
+
+  &.selected {
+    background-color: $calendar-date-button-color-active;
+    color: white;
+  }
+}

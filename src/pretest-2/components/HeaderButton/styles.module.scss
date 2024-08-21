@@ -1,0 +1,11 @@
+@import '../../styles/variable.scss';
+
+.button {
+  display: inline-block;
+  width: $calendar-header-button-width;
+  height: $calendar-header-button-height;
+  background: none;
+  border: 0;
+  font-size: 12px;
+  cursor: pointer;
+}

@@ -1,0 +1,15 @@
+@import '../../styles/variable.scss';
+
+.header {
+  display: flex;
+  width: $calendar-header-width;
+  height: $calendar-header-height;
+
+  .current-month {
+    flex-grow: 1;
+    height: $calendar-header-height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
