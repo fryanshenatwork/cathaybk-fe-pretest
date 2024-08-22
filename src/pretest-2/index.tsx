@@ -79,7 +79,7 @@ const Calendar = () => {
               isSelected={checkSelected(date)}
               isSameMonth={isSameMonth(displayMonth, date)}
               onClick={() => onClickDate(date)}
-            >{ format(date, 'dd') }</DateButton>
+            >{ format(date, 'd日') }</DateButton>
           ))
         }
       </div>
